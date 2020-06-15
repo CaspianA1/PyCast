@@ -67,6 +67,7 @@ def draw_line(x0, y0, x1, y1, char = "*"):
 
 def get_char(stdscr):
     stdscr.nodelay(True)
+    stdscr.refresh()
     char_num = stdscr.getch()
     if char_num != -1:
         return chr(char_num)
